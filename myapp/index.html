@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="menu-bar-container" id="menuBarContainer">
+            <button class="menu-button" onclick="displayButtons()" id="menuBtn"><i class="fa-solid fa-bars menu-bar"></i></button>
+            <div class="buttons-container" id="buttonsContainer">
+                <div class="each-button">
+                    <button class="logo-btn" type="button"><i class="fa-solid fa-circle-plus create-logo"></i></button>
+                    <p>Create</p>
+                </div>
+                <div class="each-button">
+                    <button class="logo-btn" type="button"><i class="fa-solid fa-tag create-logo"></i></button>
+                    <p>Label</p>
+                </div>
+                <div class="each-button">
+                    <button class="logo-btn" type="button"><i class="fa-regular fa-square-caret-down create-logo"></i></button>
+                    <p>Archieve</p>
+                </div>
+                <div class="each-button">
+                    <button class="logo-btn" type="button"><i class="fa-solid fa-trash-can create-logo"></i></button>
+                    <p>Trash</p>
+                </div>
+            </div>
+        </div>
+        <div class="note-container">
+            <input type="search" placeholder="search here..." class="search-bar" />
+            <textarea rows="5" cols="20" class="text-container" placeholder="Type a note..." id="userInput"></textarea>
+            <button class="add-button" onclick="addNote()">Add</button>
+            <div class="keep-notes-container" id="keepNotesContainer"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
